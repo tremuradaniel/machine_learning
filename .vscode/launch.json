@@ -11,6 +11,22 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "name": "Python: Debug MyScript",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "args": [
+        "../test_images/wild_pansy.jpg",
+        "best_model.h5",
+        "--top_k",
+        "10",
+        "--category_names",
+        "../label_map.json"
+      ],
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal"
     }
   ]
 }
