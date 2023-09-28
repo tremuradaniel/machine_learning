@@ -40,7 +40,7 @@ def show_images(num_images):
     '''
     if num_images % 10 == 0 and num_images <= 100:
         for digit_num in range(0,num_images):
-            plt.subplot(num_images/10,10,digit_num+1) #create subplots
+            plt.subplot(int(num_images/10), 10, digit_num+1) #create subplots
             mat_data = X.iloc[digit_num].values.reshape(28,28)  #reshape images
             plt.imshow(mat_data) #plot the data
             plt.xticks([]) #removes numbered labels on x-axis
